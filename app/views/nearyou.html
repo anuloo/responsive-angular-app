@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Search for your neariest retailer!</h1>
+    <div class="search-bar">
+        <form name="form" novalidate ng-submit="vm.search()"> 
+            <h5>Enter your post code:</h5>
+            <input type="text" ng-model="vm.postcode" name="postcode" ng-required="true"/>
+            <input type="submit" id="submit" value="Search" />
+        </form>
+    </div>
+</div> 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+
+    <title>Merc Test</title> 
+    <!-- inject:css -->
+    <!-- endinject -->
+    
+    <!--css-->
+    <style type="text/css">
+         
+    </style>
+</head>
+
+<body ng-app="appMaps">
+    <div class="top-bar">
+         <img src="img/Mercedes-Benz_Logo.png" alt="logo">
+    </div>
+    <div class="nav-bar">
+        <ul>
+            <li> <a ui-sref="home" ui-sref-active="active">Home</a></li>
+            <li><a ui-sref="nearyou" ui-sref-active="active">Near you</a></li>
+            <li><a ui-sref="about" ui-sref-active="active">About us</a></li>
+        </ul>
+    </div>
+    <ui-view></ui-view>
+    <div class="bottom-bar">
+         <p> &copy; 2017 Anuloo Banana </p>
+    </div>
+<!--js-->
+    <!-- inject:js -->
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../node_modules/lodash/dist/lodash.js"></script>
+    <script src="../node_modules/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="../node_modules/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controllers/about.controller..js"></script>
+    <script src="js/controllers/home.controller.js"></script>
+    <script src="js/controllers/nearyou.controller.js"></script>
+    <!-- endinject --> 
+</body>
+
+</html>
