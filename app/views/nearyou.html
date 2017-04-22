@@ -7,4 +7,30 @@
             <input type="submit" id="submit" value="Search" />
         </form>
     </div>
+    <div id="map_canvas"  >
+        <p ng-hide="!vm.isLoading">Loading locations...</p>
+        <div ng-if="!vm.searchDone" class="loading-image">
+            
+        </div>
+        <ui-gmap-google-map  ng-if="vm.map.center" center="vm.map.center" zoom="vm.map.zoom" options="vm.options">
+
+            <ui-gmap-window 
+                show="vm.map.window.show" 
+                coords="vm.map.window.model" 
+                options="vm.map.window.options" 
+                closeclick="vm.map.window.closeClick()"
+                templateUrl="'views/infowindow.tpl.html'"
+                templateParameter="vm.map.window.model">
+            </ui-gmap-window>
+
+            <ui-gmap-markers  
+                models="vm.markers" 
+                coords="'self'" 
+                icon="'icon'"
+                events="vm.map.markersEvents"
+                options="vm.options">
+            </ui-gmap-markers>
+
+        </ui-gmap-google-map>  
+    </div> 
 </div> 

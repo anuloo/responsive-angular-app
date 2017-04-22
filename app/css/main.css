@@ -30,3 +30,132 @@ h3 {
 p {
   color: gray;
   font-size: 0.9em; }
+
+.top-bar {
+  background: #4d4d4d;
+  padding: 10px; }
+  .top-bar img {
+    max-width: 200px; }
+
+.nav-bar {
+  padding: 1px 0;
+  background: #b3b3b3; }
+  .nav-bar ul {
+    list-style: none; }
+    .nav-bar ul li {
+      display: inline-block;
+      margin: 10px; }
+      .nav-bar ul li a {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: gray; }
+        .nav-bar ul li a.active, .nav-bar ul li a:hover {
+          color: #f2f2f2; }
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    padding: 1px 0; }
+    .nav-bar ul {
+      padding: 0; }
+      .nav-bar ul li {
+        display: block;
+        margin: 10px 5px; }
+        .nav-bar ul li a {
+          font-size: 2rem;
+          border: 1px solid;
+          display: block;
+          text-align: center; } }
+
+.container {
+  width: 90%;
+  background-color: #f2f2f2;
+  margin: 30px auto 0 auto;
+  padding: 15px;
+  height: 100%; }
+  .container h1 {
+    color: #4d4d4d;
+    text-align: center; }
+  .container article {
+    display: inline-block;
+    background-color: #fff;
+    margin: 0; }
+    .container article:last-child {
+      margin-right: 0; }
+    .container article .content {
+      box-shadow: 3px 4px 21px -1px rgba(0, 0, 0, 0.28);
+      padding: 15px; }
+  .container .caurosel img {
+    width: 100%;
+    height: 100%;
+    overflow: none; }
+  .container .loading-image {
+    opacity: 0.5;
+    height: inherit;
+    background: url(../img/Mercedes-Benz_Dealership.jpg) center center/cover no-repeat;
+    height: inherit; }
+
+@media screen and (min-width: 768px) {
+  .container article {
+    width: 33.33%;
+    float: left; } }
+
+.bottom-bar {
+  background: #4d4d4d;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center; }
+
+#map_canvas {
+  position: relative;
+  height: 100vh; }
+
+.angular-google-map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  margin: auto auto; }
+
+.infoWindow {
+  overflow: auto; }
+  .infoWindow h2 {
+    font-size: 0.9rem; }
+  .infoWindow .content {
+    border-top: 1px solid #ccc;
+    padding-top: 10px; }
+    .infoWindow .content p {
+      font-size: 0.8rem;
+      margin: 0; }
+
+.search-bar {
+  background: #4d4d4d;
+  padding: 1rem;
+  box-shadow: 3px 4px 21px -1px rgba(0, 0, 0, 0.28); }
+  .search-bar input {
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 17px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center; }
+    .search-bar input[type=submit]:hover {
+      background-color: lightblue; }
+
+@media screen and (max-width: 768px) {
+  .search-bar input {
+    font-size: 3rem;
+    width: 100%; }
+  .search-bar h5 {
+    margin: 2px auto;
+    font-size: 1.4rem; }
+  .infoWindow h2 {
+    font-size: 01.2rem; }
+  .infoWindow .content p {
+    font-size: 1.1rem; } }

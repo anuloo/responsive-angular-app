@@ -1,0 +1,48 @@
+.top-bar {
+    background: $dark-color;
+    padding: 10px;
+    img{
+        max-width: 200px;
+    }
+}
+
+.nav-bar {
+    padding: 1px 0;
+    background: $light-color;
+
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin: 10px;
+            a{
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: $default-color;
+                &.active, &:hover {
+                    color: $white-color;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        padding: 1px 0;
+        ul {
+            padding: 0;
+            li {
+                display: block;
+                margin: 10px 5px;
+                a{
+                    font-size: 2rem;
+                    border: 1px solid;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

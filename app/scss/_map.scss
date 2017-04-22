@@ -1,0 +1,83 @@
+#map_canvas {
+    position: relative;
+    height: 100vh; 
+   
+}
+
+.angular-google-map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    left: 0;
+     width: 90%;
+     height:90%;
+    margin: auto auto;
+}
+
+.infoWindow {
+    overflow: auto;
+    h2 {
+        font-size: 0.9rem;
+    }
+    .content {
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+        p{
+            font-size: 0.8rem;
+            margin: 0;
+        }
+    }
+}
+.search-bar {
+    background: $dark-color;
+    padding: 1rem;
+    box-shadow: 3px 4px 21px -1px rgba(0,0,0,0.28);
+
+    input {
+        padding: 6px;
+        box-sizing: border-box;
+        border: 1px solid #555;
+        border-radius: 17px;
+        font-size: 1rem;
+        outline: none;
+        text-align: center;
+        &[type=text]{
+            //max-width: 100px; 
+        }
+        &[type=submit]{
+            &:hover {
+                background-color: lightblue;
+            }
+            //max-width: 100px; 
+        }
+       
+    } 
+
+}
+
+@media screen and (max-width: 768px) {
+   
+
+   .search-bar {
+        input {
+            font-size: 3rem;
+            width: 100%;
+        }
+        h5 {
+            margin: 2px auto;
+            font-size: 1.4rem
+        }
+   }
+
+   .infoWindow {
+    h2 {
+        font-size: 01.2rem;
+    }
+    .content {
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+}
