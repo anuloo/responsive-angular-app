@@ -20,4 +20,12 @@ I picked angularjs and ui-google-map I also using gulp to automate my build proc
     4. No we just check there is result and call our map building function.
 11. The last and not least is to style our website and load our images.
 
+### Final thoughts
+This was not a very difficult task to complete, however as i was not familiar with googlemaps it was a fare challenge.
+## Usage
+1. clone to your local 
+2. run "npm install"
+3. run "gulp"
+
+
 
